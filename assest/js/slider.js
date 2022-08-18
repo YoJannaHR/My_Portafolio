@@ -36,8 +36,9 @@ export function slider() {
 
       $slides[i].classList.add("active"); //
     }
-    console.log("ya cambie");
+   
 
   });
 }
+
 

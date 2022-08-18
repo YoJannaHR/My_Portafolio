@@ -8,17 +8,40 @@
     <link rel="stylesheet" href="./assest/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="./assest/css/tablet.css" type="text/css" />
     <link rel="stylesheet" href="./assest/css/desktop.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="./assest/hamburgers-master/dist/hamburgers.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <button
+      class="panelBtn hamburger hamburger--vortex"
+      type="button"
+      id="menu-hamburguesa"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <header>
-      <nav>
-        <input class="menuHamburguesa" type="checkbox" id="menu-hamburguesa" />
-        <label for="menu-hamburguesa">
-          <img src="./assest/íconos/menu 1.svg" alt="" />
-        </label>
+      <!-- <input class="menuHamburguesa" type="checkbox" id="menu-hamburguesa" /> -->
 
-        <ul>
+      <!-- <img src="./assest/íconos/menu 1.svg" alt="" /> -->
+
+      <nav class="panel">
+        <ul class="menu">
           <li>
             <a id="menubtn" href="#menu">Home</a>
           </li>
@@ -55,7 +78,7 @@
       <div class="rectangulo">
         <!-- <h3>Estudios Realizados</h3> -->
         <img id="google" src="./assest/Logos- Imágenes/logo_sena.jpg" alt="" />
-      <!-- <div class="estudios"> 
+        <!-- <div class="estudios"> 
         <h5>Tecnologo En Analisis y desarrollo de la informacion</h1>
          
       </div> -->
@@ -82,12 +105,13 @@
         de Academlo, programador Web Full-Stack.
       </p>
       <a
-      href="./assest/documentos/CV Daniela Hernandez Desarrollador Web.pdf"
-      download
-      class="btn-download"
-      >Descargar CV</a>
+        href="./assest/documentos/CV Daniela Hernandez Desarrollador Web.pdf"
+        download
+        class="btn-download"
+        >Descargar CV</a
+      >
     </article>
-  
+
     <aside class="aside1">
       <h3>Servicios</h3>
       <div class="servicios">
@@ -149,12 +173,15 @@
             <a href="https://cosmetria.000webhostapp.com/" target="_blank"
               ><img
                 clas="img-slide"
-                src="./assest/Logos- Imágenes/cosmetria.png" 
+                src="./assest/Logos- Imágenes/cosmetria.png"
                 alt=""
             /></a>
           </div>
           <div class="slider-slide">
-            <a href="https://cosmetria.000webhostapp.com/productos1.php" target="_blank">
+            <a
+              href="https://cosmetria.000webhostapp.com/productos1.php"
+              target="_blank"
+            >
               <img
                 clas="img-slide"
                 src="./assest/Logos- Imágenes/cosmetria2.png"
@@ -162,7 +189,9 @@
             /></a>
           </div>
           <div class="slider-slide">
-            <a href="https://cosmetria.000webhostapp.com/index2.php" target="_blank"
+            <a
+              href="https://cosmetria.000webhostapp.com/index2.php"
+              target="_blank"
               ><img
                 clas="img-slide"
                 src="./assest/Logos- Imágenes/cosmetria3.png"
@@ -220,6 +249,11 @@
         </div>
       </div>
     </aside>
+    <!-- boton de ir hacia arriba -->
+    <div id="button-up">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
     <footer>
       <img src="./assest/íconos/My project.png" alt="" style="width: 100px" />
       <h6>© Daniela Hernández Ramírez 2021-2022</h6>
