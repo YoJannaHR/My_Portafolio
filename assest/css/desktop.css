@@ -19,6 +19,79 @@
     width: 100%;
     height: 90px;
   }
+  .redes{
+
+    position: fixed;
+    z-index: 1000;
+
+    right: 2vw;
+    top: 300px;
+    cursor: pointer;
+    border: 4px transparent;
+    transition: all 300ms ease;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+  }
+
+
+
+#linkedin{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #34b0be;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d1ceca;
+  font-size: 20px;
+ 
+}
+#linkedin:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+#github{
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #34b0be;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d1ceca;
+  font-size: 20px;
+
+}
+#github:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#mensaje{
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #34b0be;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d1ceca;
+  font-size: 20px;
+  
+}
+
+#mensaje:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
 
   nav {
     display: flex;
@@ -892,16 +965,16 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: #34b0be;
+    background-color:#d1ceca;
     padding: 1rem;
     position: fixed;
     z-index: 1000;
-    bottom: 50px;
-    right: 1vw;
+    bottom: 60px;
+    right: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d1ceca;
+    color: #302c3c;
     font-size: 20px;
     cursor: pointer;
     border: 4px transparent;
