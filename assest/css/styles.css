@@ -13,15 +13,16 @@
     grid-template-rows: auto auto auto 300px auto auto auto auto;
     background: linear-gradient(
       45deg,
+   
+     
       #34b0be,
       #34b0be,
-      black,
-      #302c3c,
-      #302c3c
-    );
+      #302c3c, 
+      black
+         );
     position: relative;
     background-size: 400% 400%;
-    animation: cambiar 15s ease infinite;
+    animation: cambiar 5s ease infinite;
   }
   
   @keyframes cambiar {
