@@ -7,10 +7,32 @@
   }
 
   body {
-    background-color: #242635;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto auto 250px auto auto auto auto;
+    background: linear-gradient(
+      45deg,
+      #34b0be,
+      #34b0be,
+      black,
+      #302c3c,
+      #302c3c
+    );
+    position: relative;
+    background-size: 400% 400%;
+    animation: cambiar 15s ease infinite;
+  }
+
+  @keyframes cambiar {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
   }
 
   header {
@@ -19,8 +41,7 @@
     width: 100%;
     height: 90px;
   }
-  .redes{
-
+  .redes {
     position: fixed;
     z-index: 1000;
 
@@ -32,66 +53,58 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-  
   }
 
+  #linkedin {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #34b0be;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d1ceca;
+    font-size: 20px;
+  }
+  #linkedin:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  #github {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #34b0be;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d1ceca;
+    font-size: 20px;
+  }
+  #github:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
 
+  #mensaje {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #34b0be;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d1ceca;
+    font-size: 20px;
+  }
 
-#linkedin{
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: #34b0be;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #d1ceca;
-  font-size: 20px;
- 
-}
-#linkedin:hover {
-  transform: scale(1.1);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-#github{
-
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: #34b0be;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #d1ceca;
-  font-size: 20px;
-
-}
-#github:hover {
-  transform: scale(1.1);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-#mensaje{
-
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: #34b0be;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #d1ceca;
-  font-size: 20px;
-  
-}
-
-#mensaje:hover {
-  transform: scale(1.1);
-  border-color: rgba(0, 0, 0, 0.1);
-}
+  #mensaje:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
 
   nav {
     display: flex;
@@ -101,16 +114,6 @@
     padding: 0.5rem 1.25rem;
   }
 
-  /* 
-  nav > label > img {
-    width: 20px;
-    filter: invert(100%);
-    height: 20px;
-    right: 20px;
-    background-color: transparent;
-    cursor: pointer;
-  } */
-
   .panelBtn {
     position: absolute;
     visibility: hidden;
@@ -118,48 +121,10 @@
     opacity: 0;
   }
 
-  /*  input#menu-hamburguesa ~ ul {
-    background-color: #242635;
-    list-style: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 55px;
-    right: 100%;
-    transition: all 300ms linear;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem 1rem;
-    z-index: 1;
-    text-decoration: none;
-  }
-
-  input#menu-hamburguesa:checked ~ ul {
-    right: 0;
-  }
-
-  .menuHamburguesa {
-    right: 0;
-  }
-*/
   @media only screen and (min-width: 768px) {
     label {
       display: none;
     }
-
-    /*
-    input#menu-hamburguesa ~ ul {
-      position: static;
-      background-color: transparent;
-      display: flex;
-      flex-direction: row;
-      height: auto;
-      justify-content: flex-end;
-      transition: none;
-      text-decoration: none;
-    } */
 
     nav > ul > li {
       display: inline-block;
@@ -213,6 +178,13 @@
     color: #d1ceca;
     font-weight: normal;
     /* position: relative; */
+  }
+
+  .circulo .uno .habilidades {
+    font-size: 38px;
+    color: #34b0be;
+    font-weight: bold;
+    font-style: normal;
   }
 
   #titulo {
@@ -965,7 +937,7 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color:#d1ceca;
+    background-color: #d1ceca;
     padding: 1rem;
     position: fixed;
     z-index: 1000;

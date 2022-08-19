@@ -11,6 +11,30 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto auto 250px auto auto auto auto;
+    background: linear-gradient(
+      45deg,
+      #34b0be,
+      #34b0be,
+      black,
+      #302c3c,
+      #302c3c
+    );
+    position: relative;
+    background-size: 400% 400%;
+    animation: cambiar 15s ease infinite;
+  }
+
+   
+  @keyframes cambiar {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
   }
 
   header {
@@ -64,7 +88,7 @@
     position: fixed;
     z-index: 1000;
     bottom: 1vh;
-    right: 1vw;
+    right: 1.5rem;
   }
 
   .circulo {
@@ -99,6 +123,12 @@
     font-size: 32px;
     color: #d1ceca;
     font-weight: normal;
+  }
+  .circulo .uno .habilidades {
+    font-size: 30px;
+    color: #34b0be;
+    font-weight: bold;
+    font-style: normal;
   }
 
   #titulo {
