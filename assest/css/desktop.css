@@ -66,6 +66,12 @@
     color: #d1ceca;
     font-size: 20px;
   }
+
+  #linkedin a i{
+
+    color: #d1ceca;
+
+  }
   #linkedin:hover {
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.1);
@@ -81,6 +87,12 @@
     align-items: center;
     color: #d1ceca;
     font-size: 20px;
+  }
+
+  #github a i{
+
+    color: #d1ceca;
+
   }
   #github:hover {
     transform: scale(1.1);
@@ -98,6 +110,11 @@
     align-items: center;
     color: #d1ceca;
     font-size: 20px;
+  }
+  #mensaje a i{
+
+    color: #d1ceca;
+
   }
 
   #mensaje:hover {
