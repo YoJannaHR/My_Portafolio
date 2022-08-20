@@ -36,7 +36,7 @@ stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de tex
 	loop: true, // Repetir el array de strings
 	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
 	showCursor: true, // Mostrar cursor palpitanto
-	cursorChar: ' ♥', // Caracter para el cursor
+	cursorChar: ' |', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 
 })
